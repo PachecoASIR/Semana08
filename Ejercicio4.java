@@ -1,21 +1,30 @@
 import java.util.Scanner;
 
 public class Ejercicio4 {
+    public static void main(String[] args) {
 
-	public static int rand(int min , int max) {
-		return (int)Math.floor(Math.random()*(max-min+1)+min);	
-	}
-	
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner( System.in );
-		
-		  System.out.println( "Esto es un generador de números random, a continuacción se le pedirá el rango en el que desee que busque el número." );
-		  System.out.println( "Introduce un número para el mínimo: " );
-		  int n1 = sc.nextInt();
-		  System.out.println( "Introduce un número para el máximo: " );
-		  int n2 = sc.nextInt();	
-		  System.out.println( "Tu número es: " );
-		  System.out.println(rand(n1,n2));
+        String p;
+        String p2;
+        String p3;
+
+        Scanner leer_entrada = new Scanner(System.in);
+
+        System.out.println("Introduce una cadena de caracteres: ");
+
+        p = leer_entrada.nextLine();
+    
+                System.out.println (p);
+
+        System.out.println("Introduce una nueva cadena de caracteres: ");
+
+        p2 = leer_entrada.nextLine();      
+                
+                System.out.println (p2.length());
+        
+        System.out.println("Introduce una cadena de caracteres: ");
+
+        p3 = leer_entrada.nextLine();
+            
+                System.out.println (p3);
+        }
     }
-}
